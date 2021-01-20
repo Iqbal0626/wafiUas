@@ -100,11 +100,11 @@ public class Main {
             Drink selectedDrink = app.getMenu(inNomor);
 
             System.out.print("Berapa jumlah yang akan anda beli : ");
-            int jumlahBeli = scan.nextInt();
-            selectedDrink.setAmount(jumlahBeli);
+            int totalBuy = scan.nextInt();
+            selectedDrink.setAmount(totalBuy);
 
             System.out.println("___________________________________________________________________");
-            System.out.println("Minuman yang anda pilih adalah " + selectedDrink.getName() + " sebanyak " + jumlahBeli + " buah, dengan harga tiap item adalah sebesar " + selectedDrink.getPrice() + " dan total pembayarannya adalah sebesar " + (selectedDrink.getPrice() * jumlahBeli));
+            System.out.println("Minuman yang anda pilih adalah " + selectedDrink.getName() + " sebanyak " + totalBuy + " buah, dengan harga tiap item adalah sebesar " + selectedDrink.getPrice() + " dan total pembayarannya adalah sebesar " + (selectedDrink.getPrice() * totalBuy));
             
 
             if (selectedDrink.getName().equals("Juice")) {
